@@ -189,7 +189,7 @@ do
 		end
 
 		for i = num + 1, #self.rows do
-			self.rows[i]:Hide();
+			if self.rows[i] then self.rows[i]:Hide() end
 		end
 
 		self:SetHeight();
